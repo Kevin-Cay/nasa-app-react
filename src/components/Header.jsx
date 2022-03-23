@@ -1,7 +1,10 @@
 import { ContainerHeader, HeaderImage } from "./Header.styles"
 import { H1, H2 } from "./global.styles"
 
-
+/**
+ * 
+ * @returns {JSX.Element} Header component with image and intro text 
+ */
 function Header() {
     return (
         <ContainerHeader id='header' >

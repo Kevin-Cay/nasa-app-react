@@ -4,7 +4,9 @@ import { ContinerRover, GalerySection, RoverDescription } from './RoverPhotos.st
 import ResponsiveCarousel from './ResponsiveCarousel';
 import '../index.css'
 
-
+/**
+ * Default data to the Rover Photos
+ */
 const defaultDataRover ={
   latest_photos: [
   {
@@ -29,6 +31,10 @@ const defaultDataRover ={
   
   }
 
+  /**
+   * 
+   * @returns {Promise} Promise with the data of the rovers
+   */
 export async function getData(){
   try{
     const apiKey = process.env.REACT_APP_NASA_APIKEY    
@@ -48,19 +54,17 @@ export async function getData(){
   }
 }
 
+
+/**
+ * 
+ * @returns {JSX.Element} RoverPhotos component with the images and description of the rovers
+ */
 function RoverPhotos() {
   const [dataCuriosity, setdataCuriosity] = useState(defaultDataRover);
   const [dataPerseverance, setdataPerseverance] = useState(defaultDataRover);
   const [rover, setRover] = useState("curiosity");
   const [roverInfo, setRoverInfo] = useState(curiosityRover[0]);
   const [roverGalery, setRoverGalery] = useState(dataCuriosity.latest_photos);
-
-  // const fetchRoversInfo = async () =>{
-  //   const response = await fetch(`/api/${rover}`)
-  //   const data = await response.json()
-  //   setRoverInfo(data[0])
-  // }
-
 
   let description = roverInfo.description;
   let descriptionArr = [];
@@ -82,6 +86,9 @@ function RoverPhotos() {
 
   }
   
+  /**
+   * useEffect to get the data from the API with de getData function
+   */
   useEffect(()=>{
     getData().then(data => {
       setdataCuriosity(data.props.dataCuriosity)

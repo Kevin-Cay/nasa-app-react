@@ -3,6 +3,10 @@ import {H3} from './global.styles'
 import {SiNasa} from 'react-icons/si'
 import {BsGithub} from 'react-icons/bs'
 
+/**
+ * 
+ * @returns {JSX.Element} Footer component with link to GitHub 
+ */
 function Footer() {
   return (
     <FooterContainer>

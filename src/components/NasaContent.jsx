@@ -2,6 +2,11 @@ import React from 'react'
 import {H1,  P} from './global.styles'
 import { NasaContentContainer, NasaContentText, NasaContentImage, Rotate } from './NasaContent.styles'
 
+
+/**
+ * 
+ * @returns {JSX.Element} NasaContent component with information about the NASA 
+ */
 function NasaContent() {
   return (<>
     <NasaContentContainer>

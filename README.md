@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# NASA APP 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an app based in [NASA API](https://api.nasa.gov/). The objective of this API is to make NASA data, including imagery, eminently accessible to application developers. 
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a Nasa APP built with ReactJS, Styled Components, JavaScrip, JSX, CSS and HTML. In this webpage you can see the pic of the day, and a gallery of photos by two Rover's. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Screenshot
 
-### `npm test`
+![](./screenshot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Proyect URL: [Git Proyect](https://github.com/Kevin-Cay/nasa-app-react.git)
+- Live Site URL: [Live Site](https://mystifying-wescoff-d706ea.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
+First I created the entire structure with HTML then i add styled components. Also, I created all the parts. Finally, I connected all in the App Component with the Nasa API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- ReactJS
+- Flexbox
+- CSS Grid
+### What I learned
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This is some of the code that I learned about API fetch, and some configurations in the components. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```js
+export async function getData(){
+  try{
+    const apiKey = process.env.REACT_APP_NASA_APIKEY    
+    const resCuriosity = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?&page=1&api_key=${apiKey}`)
+    const dataCuriosity = await resCuriosity.json() 
+    const resPerseverance = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos?&page=1&api_key=${apiKey}`)
+    const dataPerseverance = await resPerseverance.json()
+    return{
+      props: {
+        dataCuriosity : dataCuriosity,
+        dataPerseverance: dataPerseverance,
+      },
+      revalidate: 10,
+    }
+  } catch (error) {
+    console.log(error)
+  }
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Website - [Kevin Cay](https://portfolio-kevin-cay.vercel.app/)
+- Frontend Mentor - [@kevincay](https://www.frontendmentor.io/profile/Kevin-Cay)
+- Github - [@Kevin-Cay](https://github.com/Kevin-Cay/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A tip that i can give you is lear about API fetch and async/await functions.

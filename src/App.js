@@ -10,7 +10,7 @@ function App() {
     <>
     <NavBar />
     <Header />
-     {/* <PicOTD /> */}
+     <PicOTD />
      <NasaContent />
      <RoverPhotos />
      <Footer />

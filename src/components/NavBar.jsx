@@ -2,7 +2,10 @@ import { Nav, NavLogo, NavMenu } from "./NavBar.styles"
 import {SiNasa} from 'react-icons/si'
 import {BsGithub} from 'react-icons/bs'
 
-
+/**
+ * 
+ * @returns {JSX.Element} NavBar component with diferents links to different parts of the app
+ */
 function NavBar() {
     return (
         <Nav>
@@ -14,7 +17,7 @@ function NavBar() {
             <NavMenu>
                 <a href="#POTD">Pic Of The Day</a>
                 <a href="#RoverPhotos">Rover Photos</a>
-                <a rel="noreferrer" target="_blank" href="https://github.com/Kevin-Cay/nasa-app.git">
+                <a rel="noreferrer" target="_blank" href="https://github.com/Kevin-Cay/nasa-app-react.git">
                     <BsGithub size="1.2em" />
                 </a>
             </NavMenu>

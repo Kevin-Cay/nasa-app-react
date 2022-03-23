@@ -12,8 +12,9 @@ export const ContainerPic = styled.section`
     display: flex;
     align-items:center;
     justify-content:space-between;
+    /* overflow: hidden; */
     @media screen and (max-width:600px){
-        height: 825px;
+        height: 1000px;
         display: flex;
         padding: 4.5rem 2rem 2rem 2rem;
         flex-direction: column-reverse;
@@ -40,13 +41,12 @@ export const ImageOTD = styled.div`
     height: 400px;
     border-radius: 5px;
     img{
-        max-height:100%;
-        height:100%;
+        max-width: 100%;
         margin: 0 auto;
+        object-fit:cover;
     }
     @media screen and (max-width:600px){
         margin:2em auto 0 auto;
         width:90%;
-        height: 40%;
     }
 `

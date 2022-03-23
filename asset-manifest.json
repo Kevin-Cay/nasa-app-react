@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/nasa-app-react/static/css/main.321989de.css",
+    "main.js": "/nasa-app-react/static/js/main.b811cf77.js",
+    "static/media/space_rocket-3.svg": "/nasa-app-react/static/media/space_rocket-3.8ac40f122cd346d3ca79943ffaf088ef.svg",
+    "static/media/saturn.svg": "/nasa-app-react/static/media/saturn.5464557bebde74346e3a6b31590ee459.svg",
+    "index.html": "/nasa-app-react/index.html",
+    "static/media/waveNav.svg": "/nasa-app-react/static/media/waveNav.d3316ef7c14e1614af28691e4e9f77e9.svg",
+    "static/media/waveP.svg": "/nasa-app-react/static/media/waveP.2a944614e658ac1a87c2e62e422bcf67.svg",
+    "static/media/waveHeader.svg": "/nasa-app-react/static/media/waveHeader.539e1fcc221967c157a8500a794ea5a9.svg",
+    "static/media/waveNContent.svg": "/nasa-app-react/static/media/waveNContent.5b011427e35c6d14bacfcbdab89afbed.svg",
+    "main.321989de.css.map": "/nasa-app-react/static/css/main.321989de.css.map",
+    "main.b811cf77.js.map": "/nasa-app-react/static/js/main.b811cf77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.321989de.css",
+    "static/js/main.b811cf77.js"
+  ]
+}

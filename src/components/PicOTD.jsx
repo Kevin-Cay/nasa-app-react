@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { H1,  H3, P, SubTitle } from './global.styles';
 import {ContainerPic, ImageDescription, ImageOTD} from './PicOTD.styles'
 
-
+/**
+ * Default data to the Pic of the Day
+ */
 const defaultData ={
   title:"error",
   date: '01-01-1991' ,
@@ -10,6 +12,10 @@ const defaultData ={
   explanation:'error'
 }
 
+/**
+ * 
+ * @returns {JSX.Element} PicOTD component with the image and description of the day
+ */
 function PicOTD() {
   const [data, setData] = useState(defaultData);
   async function getData() {
@@ -24,6 +30,10 @@ function PicOTD() {
       console.log(error)
     }
   }
+
+  /**
+   * useEffect to get the data from the API
+   */
   useEffect(() => {
     getData().then(({data}) => {
       setData(data)

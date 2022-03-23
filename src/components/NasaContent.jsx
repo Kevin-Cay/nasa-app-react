@@ -1,6 +1,7 @@
 import React from 'react'
 import {H1,  P} from './global.styles'
-import { NasaContentContainer, NasaContentText, NasaContentImage, Rotate } from './NasaContent.styles'
+import { NasaContentContainer, NasaContentText, NasaContentImage} from './NasaContent.styles'
+import image from '../assets/saturn.svg'
 
 
 /**
@@ -12,7 +13,7 @@ function NasaContent() {
     <NasaContentContainer>
         <NasaContentImage>
             <img 
-            src={'/saturn.svg'} alt='saturn_image'  
+            src={image} alt='saturn_image'  
             />
         </NasaContentImage>
         <NasaContentText>

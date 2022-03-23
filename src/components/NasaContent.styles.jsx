@@ -1,12 +1,12 @@
-import styled ,{keyframes}from 'styled-components'
-
+import styled from 'styled-components'
+import wavePOTD from '../assets/waveP.svg'
 
 
 export const NasaContentContainer = styled.section`
     width: 100%;
     height: 650px;
     padding: 5em 5em 2em 5em ;
-    background-image: url('/wavePOTD.svg') ;
+    background-image: url(${wavePOTD}) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-color:#f4fab4;

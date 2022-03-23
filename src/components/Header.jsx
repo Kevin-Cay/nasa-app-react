@@ -1,5 +1,6 @@
 import { ContainerHeader, HeaderImage } from "./Header.styles"
 import { H1, H2 } from "./global.styles"
+import image from '../assets/space_rocket-3.svg'
 
 /**
  * 
@@ -10,7 +11,7 @@ function Header() {
         <ContainerHeader id='header' >
             <HeaderImage>
                 <img
-                src={'/space_rocket-3.svg'} alt='space_rocket'  
+                src={image} alt='space_rocket'  
                 />
             </HeaderImage>
             <div>

@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import image from '../assets/waveHeader.svg'
 
 export const ContainerPic = styled.section`
     margin: -1;
     width:100%;
     padding: 8rem 5rem 2rem 5rem;
     height: auto;
-    background-image: url('/waveHeader.svg') ;
+    background-image: url(${image}) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-color:#85f5ac;

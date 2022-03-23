@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import image from "../assets/waveNContent.svg";
 
 export const ContinerRover = styled.section`
     margin: -1;
@@ -6,7 +7,7 @@ export const ContinerRover = styled.section`
     padding: 5rem 5rem 2rem 5rem;
     position: relative;
     height: 750px;
-    background-image: url('/waveNContent.svg') ;
+    background-image: url(${image}) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-color:#84b6f4;

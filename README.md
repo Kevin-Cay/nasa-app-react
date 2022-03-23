@@ -25,7 +25,7 @@ This is a Nasa APP built with ReactJS, Styled Components, JavaScrip, JSX, CSS an
 ### Links
 
 - Proyect URL: [Git Proyect](https://github.com/Kevin-Cay/nasa-app-react.git)
-- Live Site URL: [Live Site](https://mystifying-wescoff-d706ea.netlify.app/)
+- Live Site URL: [Live Site](https://kevin-cay.github.io/nasa-app-react/)
 
 ## My process
 First I created the entire structure with HTML then i add styled components. Also, I created all the parts. Finally, I connected all in the App Component with the Nasa API.

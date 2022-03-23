@@ -17,7 +17,7 @@ function NavBar() {
             <NavMenu>
                 <a href="#POTD">Pic Of The Day</a>
                 <a href="#RoverPhotos">Rover Photos</a>
-                <a rel="noreferrer" target="_blank" href="https://github.com/Kevin-Cay/nasa-app-react.git">
+                <a rel="noreferrer" title="Github Repo" target="_blank" href="https://github.com/Kevin-Cay/nasa-app-react.git">
                     <BsGithub size="1.2em" />
                 </a>
             </NavMenu>
